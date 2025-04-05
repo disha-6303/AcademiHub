@@ -1,0 +1,139 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom, #000020, #303054); /* Dark gradient background */
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    padding: 1rem 2rem;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+}
+
+.logo-academi{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff; /* Yellow color for logo */
+    font-family: 'Cavolini';
+
+}
+
+.logo-hub{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffd000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: #f5c518; 
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ffd700; 
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-family: 'Neuton', serif;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    color: #f5c518; /* Yellow color for description */
+}
+
+#branches-button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    background: #4a4a6a; /* Dark button background */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background 0.3s;
+}
+
+#branches-button:hover {
+    background: #5a5a7a; /* Slightly lighter on hover */
+}
+
+.arrow {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        padding: 0 1rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
