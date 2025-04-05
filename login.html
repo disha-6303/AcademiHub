@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademiHub - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-academi">ACADEMI</span><span class="logo-hub">HUB</span>
+                </a>
+            </div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn back-to-home">Back to Home</a>
+                <a href="register.html" class="btn register">Register</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="login-section">
+        <div class="login-form">
+            <h2>Login</h2>
+            <p>Sign in to your account</p>
+            <form action="/login" method="post">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+            <!-- <a href="#" class="forgot-password">Forgot password? Click here to reset</a> -->
+            <a href="register.html" class="register-new-btn">Register New Account</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
