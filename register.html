@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AcademiHub - Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-icon">📚</span>
+                    <span class="logo-academi">ACADEMI</span><span class="logo-hub">HUB</span>
+                </a>
+            </div>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn back-to-home">Back to Home</a>
+                <a href="login.html" class="btn login">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="register-section">
+        <div class="register-form">
+            <h2>Create Account</h2>
+            <p>Register to access resources</p>
+            <form action="/register" method="post">
+                <div class="input-group">
+                    <span class="input-icon">👤</span>
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">✉️</span>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">🔒</span>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="input-group">
+                    <span class="input-icon">🔑</span>
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="register-btn">Register</button>
+            </form>
+            <a href="login.html" class="login-link">Already have an account? Sign in</a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
